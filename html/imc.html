@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/cotizacion.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <header>
+    <h1>CALCULADORA DE IMC</h1>
+  </header>
+
+  <section>
+    <header>
+      <center>
+        <h3>Datos del Usuario</h3>
+      </center>
+    </header>
+  </section>
+
+  <label for="">Peso</label>
+  <input type="number" name="peso" id="peso" placeholder="Insertar peso en KG" required><br>
+  
+  <label for="">Altura</label>
+  <input type="number" name="altura" id="altura" placeholder="Insetar altura en metros" required><br>
+  
+  <br>
+  <br>
+  <hr>
+  
+  <section>
+    <header>
+      <center>
+        <h3>Cálculos</h3>
+      </center>
+    </header>
+  </section>
+
+  <hr>
+  <br>
+
+  <label for="">IMC</label>
+  <input type="number" name="imc" id="imc" readonly>
+  
+  <button id="btnCalcular">Calcular IMC</button>
+
+  <script src="../js/app_imc.js"></script>
+</body>
+</html>
