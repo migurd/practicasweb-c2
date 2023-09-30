@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotización</title>
+  <link rel="stylesheet" href="../css/cotizacion.css">
+</head>
+<body>
+  
+  <header>
+    <h1>Autos Patria Venta de Automóviles Nuevos</h1>
+    <h2>Cotización</h2>
+  </header>
+
+  <section>
+    <header>
+      <center>
+        <h3>Datos del Automóvil</h3>
+      </center>
+    </header>
+  </section>
+
+  <label for="">Valor del Auto</label>
+  <input type="number" name="valorAuto" id="valorAuto" required>
+
+  <label for="">Porcentaje de Pago Inicial</label>
+  <input type="number" name="porcentaje" id="porcentaje"> <br>
+
+  <label for="">Plazos</label>
+  <select name="plazos" id="plazos">
+    <option value="12">12 Meses</option>
+    <option value="24">24 Meses</option>
+    <option value="36">36 Meses</option>
+    <option value="48">48 Meses</option>
+    <option value="60">60 Meses</option>
+  </select>
+
+  <br>
+  <br>
+  <hr>
+
+  <section>
+    <header>
+      <center>
+        <h3>Cálculos</h3>
+      </center>
+    </header>
+  </section>
+
+  <hr>
+  <br>
+  
+  <label for="">Pago Inicial</label>
+  <input type="text" name="pagoInicial" id="pagoInicial" readonly> <br> <!-- READONLY?????????????????? -->
+
+  <label for="">Total a Financiar</label>
+  <input type="text" name="totalFin" id="totalFin" readonly> <br>
+
+  <label for="">Pago Mensual</label>
+  <input type="text" name="pagoMensual" id="pagoMensual" readonly> <br>
+
+  <button id="btnCalcular">Calcular</button>
+
+  <script src="../js/app_cotizacion.js"></script>
+</body>
+</html>
